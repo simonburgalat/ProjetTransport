@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<?php        
+session_start();?>
+
+<!DOCTYPE html>
 
 <html>
 
@@ -17,20 +20,18 @@
 
     <h1 id='main_titre'>Accueil </h1>
 	
+	<?php if (!empty($_SESSION['id'])) {?>
+
+	<a href="deconnexion.php"> Se déconnecter</a>
+
+<?php } else { ?>
+
 	<!--Menu d'authentification -->
 	<div id='auth'>
-	<table  border="1" >
-	<tr>
-	<td>
-	Login: <input type="text" id="login">
-	Password: <input type="text" id="password">
-	<input type="submit" id="valider" value="Valider">
-	<!--Authentification -->
-	<a href="‪Inscription.php">Créer un compte</a>
-	</td>
-	</tr>
-	</table>
+	<?php include ("connexion.php"); ?>
 	</div>
+<?php } ?>
+	
 	<!--Affichage d'une image de Map -->
 	<img id='map_main' src="map_main.png" alt="Erreur" >
 	<!--Menu latéral -->

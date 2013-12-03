@@ -48,16 +48,16 @@
 <!--Formulaire d'ajout d'un arret -->
 <div id='ajout_arret'>
 <form action="ajoutarret.php" method="post">
-<p>Nom:</p> <input type="text"  id="arret_nom_ajout">
-<p>Latitude:</p> <input type="text" id="arret_latitude_ajout">
-<p>Longitude:</p> <input type="text" id="arret_longitude_ajout">
+<p>Nom:</p> <input type="text"  name="arret_nom_ajout">
+<p>Latitude:</p> <input type="text" name="arret_latitude_ajout">
+<p>Longitude:</p> <input type="text" name="arret_longitude_ajout">
 <p> <input type="submit" value="Ajouter l'arret" ></p>
 </form>
 </div>
 <!--Formulaire de suppression d'arret -->
 <div id='suppr_arret'>
 <form action="supprarret.php" method="post">
-<p>Nom:</p> <input type="text"  id="arret_nom_suppr">
+<p>Nom:</p> <input type="text"  name="arret_nom_suppr">
 <p> <input type="submit" value="Supprimer l'arret" ></p>
 </form>
 </div>

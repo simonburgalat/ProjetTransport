@@ -20,7 +20,7 @@ catch (Exception $e)
  
    <body>
  
- 
+
        <!--On va chercher les chemins et on affiche les informations relevantes -->
        <?php $reponse = $bdd->query('SELECT * FROM Chemin ORDER BY id');
         while ($donnees = $reponse->fetch())
@@ -38,8 +38,8 @@ catch (Exception $e)
 		echo $donnees['Nom'];
 		?>
 		</td>
-		<!--On fera appel a une fontion javascript -->
-		<td>   <input type="button" name="details_chemin" value="Détails" onclick="chemin_details()">
+		<!--TRAVAIL EN COURS : On va utiliser du JS et pas du PHP d'escroc comme la-->
+		<td>   <input type="submit" name="details_chemin" value="Détails" onclick="<?php include("courses_assoc.php"); ?>">
 		</td>
 		</tr>
 		

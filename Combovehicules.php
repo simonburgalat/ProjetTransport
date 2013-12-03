@@ -3,7 +3,7 @@
 	   //On recupere la base de données Projet Transport
 try
 {
-	$bdd = new pdo('mysql:host=localhost;dbname=Projet Transport', 'root', '');
+	$bdd = new pdo('mysql:host=localhost;dbname=Projet Transport', 'root', 'root');
 	}
 catch (Exception $e)
 {

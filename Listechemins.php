@@ -34,7 +34,7 @@
 <!--Formulaire d'ajout de chemin -->
 <div id='ajout_chemin'>
 <form action="Ajoutchemin.php" method="post">
-<p>ID:</p> <input type="text"  name="ID_chemin">
+<p>ID:</p> <input type="text"  name="ID_chemin[]">
 <p>Départ:</p> <input type="text" name="Depart_chemin">
 <p>Terminus:</p> <input type="text" name="Terminus_chemin">
 <p> <input type="submit" name="new_chemin" value="Ajouter le chemin" ></p>

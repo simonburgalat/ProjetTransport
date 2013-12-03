@@ -49,6 +49,7 @@ catch (Exception $e)
 		
 		<?php
 		}
+		
 		$reponse->closeCursor();
         ?>
  

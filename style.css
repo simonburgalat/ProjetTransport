@@ -32,28 +32,25 @@ p
 line-height:133%;
 }
 
-#auth
-{
 
-
-}
-
+/*
 #menu_liens
 {
 
 position: absolute;
 top:500px;
 right:100px;
+} */
 
-}
+/*
 #auth
 {
 
-position: absolute;
+/*position: absolute;
 top:30px;
-right:10px;
-
+right:10px; */
 }
+
 
 #ajout_vehicule
 {
